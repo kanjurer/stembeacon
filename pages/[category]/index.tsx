@@ -1,9 +1,12 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import BlogLayout from "../../components/BlogLayout";
-import { IBlog, ICategory } from "../../lib/interfaces/blog";
-import { getAllPostsByCategoryId, getCategoryById } from "../../lib/posts";
-import { categories } from "../../lib/categories.json";
+import { IBlog, ICategory } from "../../lib/interfaces";
+import {
+    getAllCategories,
+    getAllPostsByCategoryId,
+    getCategoryById,
+} from "../../lib/postUtils";
 import { ParsedUrlQuery } from "querystring";
 import BlogPreview from "../../components/BlogPreview";
 
@@ -25,7 +28,7 @@ const BlogCategory: NextPage<BlogCategoryProps> = ({
 
             <section>
                 {categoryPosts.map((blog) => {
-                    return <BlogPreview blog={blog} />;
+                    return <BlogPreview blog={blog} key={blog.id} />;
                 })}
             </section>
         </BlogLayout>
@@ -39,8 +42,12 @@ interface Params extends ParsedUrlQuery {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = categories.map((e) => {
-        return "/categories/" + e.id;
+    const paths = getAllCategories().map((e) => {
+        return {
+            params: {
+                category: e.id,
+            },
+        };
     });
 
     return {

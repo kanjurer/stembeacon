@@ -1,9 +1,11 @@
 import type { AppProps } from "next/app";
-import Footer from "../components/Footer";
+
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+
 import "../styles/styles.scss";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <NavBar />
@@ -13,4 +15,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     );
 }
 
-export default MyApp;
+export default App;

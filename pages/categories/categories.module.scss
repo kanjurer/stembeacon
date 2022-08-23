@@ -1,6 +1,0 @@
-@use "../../styles/utils/index" as utils;
-
-.categories {
-    @include utils.add-margin();
-    @include utils.add-padding();
-}

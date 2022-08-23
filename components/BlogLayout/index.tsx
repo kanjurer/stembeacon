@@ -1,14 +1,7 @@
-import type { GetStaticProps, NextPage } from "next";
 import styles from "./BlogLayout.module.scss";
 
-import NavBar from "../NavBar";
-import Footer from "../Footer";
-
-import { IBlog } from "../../lib/interfaces/blog";
-import { getAllPosts } from "../../lib/posts";
-
 interface BlogLayoutProps {
-    children: JSX.Element[];
+    children: JSX.Element[] | JSX.Element;
 }
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
