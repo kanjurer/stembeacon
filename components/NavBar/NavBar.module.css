@@ -1,0 +1,9 @@
+.nav {
+  color: blue;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}/*# sourceMappingURL=NavBar.module.css.map */

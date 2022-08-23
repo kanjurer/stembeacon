@@ -1,0 +1,9 @@
+@mixin add-margin() {
+    margin: 10px;
+}
+@mixin add-padding() {
+    padding: 5px;
+}
+@mixin add-borderRadius() {
+    border-radius: 5px;
+}

@@ -1,13 +1,13 @@
 import path from "path";
 import fs from "fs";
-import matter, { GrayMatterOption } from "gray-matter";
+import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-import { Blog } from "../interfaces/blog";
+import { IBlog } from "./interfaces/blog";
 
 const POST_DIRECTORY = "blogPosts";
 
-export async function getPostData(id: string): Promise<Blog> {
+export async function getPostData(id: string): Promise<IBlog> {
     const fullPath = path.join(POST_DIRECTORY, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
@@ -52,4 +52,14 @@ export function getAllPostIds(): Array<{ params: { id: string } }> {
             },
         };
     });
+}
+
+export async function getAllPosts(): Promise<IBlog[]> {
+    return Promise.all(
+        getAllPostIds().map(async ({ params }) => {
+            const p = await getPostData(params.id);
+
+            return p;
+        })
+    );
 }

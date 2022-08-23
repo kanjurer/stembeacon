@@ -1,0 +1,14 @@
+@use "../../styles/utils/index" as utils;
+
+.blogPreview {
+    @include utils.add-margin();
+    @include utils.add-padding();
+    @include utils.add-borderRadius();
+
+    border: 2px solid gray;
+    width: 40%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

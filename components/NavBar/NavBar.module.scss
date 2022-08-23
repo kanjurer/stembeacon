@@ -1,3 +1,9 @@
 .nav {
-    color: blue;
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        width: 20%;
+    }
 }
