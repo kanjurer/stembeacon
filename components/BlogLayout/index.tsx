@@ -1,8 +1,11 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import styles from "./BlogLayout.module.scss";
 
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+
+import { IBlog } from "../../lib/interfaces/blog";
+import { getAllPosts } from "../../lib/posts";
 
 interface BlogLayoutProps {
     children: JSX.Element[];
@@ -10,11 +13,9 @@ interface BlogLayoutProps {
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
     return (
-        <>
-            <NavBar />
-            <main>{children}</main>
-            <Footer />
-        </>
+        <main className={styles.mainContainer}>
+            <section className={styles.mainContent}>{children}</section>
+        </main>
     );
 };
 

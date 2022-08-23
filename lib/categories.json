@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "id": "science",
+            "categoryName": "Science",
+            "categoryDescription": "what is this"
+        },
+        {
+            "id": "technology",
+            "categoryName": "Technology",
+            "categoryDescription": "what is this"
+        },
+        {
+            "id": "mathematics",
+            "categoryName": "Mathematics",
+            "categoryDescription": "what is this"
+        },
+        {
+            "id": "computer-science",
+            "categoryName": "Computer Science",
+            "categoryDescription": "what is this"
+        }
+    ]
+}

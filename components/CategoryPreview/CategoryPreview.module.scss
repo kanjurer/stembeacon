@@ -1,2 +1,13 @@
+@use "../../styles/utils/index" as utils;
+
 .categoryPreview {
+    @include utils.add-margin();
+    @include utils.add-padding();
+    @include utils.add-borderRadius();
+
+    border: 2px solid gray;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -20,8 +20,13 @@ const BlogPost: NextPage<BlogPostProps> = ({ postData }) => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <main dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <main>
+                <section
+                    dangerouslySetInnerHTML={{
+                        __html: `<h2>${postData.id}</h2>${postData.contentHtml}`,
+                    }}
+                />
+            </main>
         </BlogLayout>
     );
 };

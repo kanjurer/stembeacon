@@ -1,0 +1,28 @@
+@use "../../styles/utils/index" as utils;
+
+.mainContainer {
+    display: grid;
+
+    @include utils.breakpoint-up(small) {
+        grid-template-columns: 1fr;
+    }
+
+    @include utils.breakpoint-up(medium) {
+        grid-template-columns: 1fr;
+    }
+
+    @include utils.breakpoint-up(large) {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    @include utils.breakpoint-up(xlarge) {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
+
+.mainContent {
+    @include utils.add-margin();
+
+    max-width: 900px;
+    margin: 0 auto;
+}

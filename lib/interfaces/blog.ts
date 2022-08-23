@@ -3,11 +3,13 @@ export interface IBlog {
     id: string;
     title?: string;
     slug?: string;
-    category?: string;
+    categoryId?: string;
     datePublished?: Date;
+    content: string;
 }
 
 export interface ICategory {
     id: string;
     categoryName: string;
+    categoryDescription: string;
 }

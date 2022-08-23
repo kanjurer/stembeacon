@@ -1,0 +1,10 @@
+@use "../../styles/utils/index" as utils;
+
+.posts {
+    @include utils.add-margin();
+    @include utils.add-padding();
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
