@@ -1,0 +1,18 @@
+@use "../../styles/utils/" as utils;
+
+.categoryTag {
+    @include utils.add-padding();
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.dateTag {
+    @include utils.add-padding();
+}

@@ -1,6 +1,9 @@
 @use "../../styles/utils/index" as utils;
 
 .mainContainer {
+    @include utils.add-margin();
+    @include utils.add-padding();
+
     display: grid;
 
     @include utils.breakpoint-up(small) {
@@ -12,17 +15,17 @@
     }
 
     @include utils.breakpoint-up(large) {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 8fr 2fr;
     }
 
     @include utils.breakpoint-up(xlarge) {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 8fr 2fr;
     }
 }
 
 .mainContent {
     @include utils.add-margin();
+    @include utils.add-padding();
 
     max-width: 900px;
-    margin: 0 auto;
 }

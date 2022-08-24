@@ -1,11 +1,13 @@
 import type { GetStaticProps, NextPage } from "next";
-import styles from "./home.module.scss";
 import Head from "next/head";
+
+import { ICategory } from "../lib/interfaces";
+import { getAllCategories } from "../lib/postUtils";
+
 import BlogLayout from "../components/BlogLayout";
-import BlogPreview from "../components/BlogPreview";
-import { IBlog, ICategory } from "../lib/interfaces";
-import { getAllPosts } from "../lib/postUtils";
 import CategoryPreview from "../components/CategoryPreview";
+
+import styles from "./home.module.scss";
 
 interface HomeProps {
     categories: ICategory[];
@@ -13,37 +15,34 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ categories }) => {
     return (
-        <BlogLayout>
-            {categories.map((category) => {
-                return (
-                    <CategoryPreview category={category} key={category.id} />
-                );
-            })}
-        </BlogLayout>
+        <>
+            <Head>
+                <title>STEMbeacon - Home</title>
+                <meta
+                    name="STEMbeacon"
+                    content="A personal blog, but not too personal."
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
+            <BlogLayout>
+                {categories.map((category) => {
+                    return (
+                        <CategoryPreview
+                            category={category}
+                            key={category.categoryId}
+                        />
+                    );
+                })}
+            </BlogLayout>
+        </>
     );
 };
 
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const categories = [
-        {
-            id: "science",
-            categoryName: "Science",
-        },
-        {
-            id: "technology",
-            categoryName: "Technology",
-        },
-        {
-            id: "mathematics",
-            categoryName: "Mathematics",
-        },
-        {
-            id: "computer-science",
-            categoryName: "Computer Science",
-        },
-    ];
+    const categories = getAllCategories();
     return {
         props: {
             categories,

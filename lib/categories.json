@@ -1,24 +1,28 @@
 {
     "categories": [
         {
-            "id": "science",
+            "categoryId": "science",
             "categoryName": "Science",
-            "categoryDescription": "what is this"
+            "categoryDescription": "what is this",
+            "categoryColor": "red"
         },
         {
-            "id": "technology",
+            "categoryId": "technology",
             "categoryName": "Technology",
-            "categoryDescription": "what is this"
+            "categoryDescription": "what is this",
+            "categoryColor": "green"
         },
         {
-            "id": "mathematics",
+            "categoryId": "mathematics",
             "categoryName": "Mathematics",
-            "categoryDescription": "what is this"
+            "categoryDescription": "what is this",
+            "categoryColor": "orange"
         },
         {
-            "id": "computer-science",
+            "categoryId": "computer-science",
             "categoryName": "Computer Science",
-            "categoryDescription": "what is this"
+            "categoryDescription": "what is this",
+            "categoryColor": "brown"
         }
     ]
 }

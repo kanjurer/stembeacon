@@ -11,9 +11,10 @@ interface CategoryPreviewProps {
 
 const CategoryPreview: NextPage<CategoryPreviewProps> = ({ category }) => {
     return (
-        <Link href={`/${category.id}`}>
+        <Link href={`/${category.categoryId}`}>
             <div className={styles.categoryPreview}>
                 <h2>{category.categoryName}</h2>
+                <p>{category.categoryDescription}</p>
             </div>
         </Link>
     );

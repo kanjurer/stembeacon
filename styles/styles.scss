@@ -1,2 +1,24 @@
 @forward "globals";
 @forward "utils";
+@use "utils" as utils;
+
+.nav-wrapper {
+    display: grid;
+    grid-template-rows: auto;
+
+    @include utils.breakpoint-up(small) {
+        grid-template-columns: 1fr;
+    }
+
+    @include utils.breakpoint-up(medium) {
+        grid-template-columns: 1fr;
+    }
+
+    @include utils.breakpoint-up(large) {
+        grid-template-columns: 1fr 9fr;
+    }
+
+    @include utils.breakpoint-up(xlarge) {
+        grid-template-columns: 1fr 9fr;
+    }
+}

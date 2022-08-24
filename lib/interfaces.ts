@@ -1,16 +1,20 @@
 export interface IBlog {
-    id: string;
+    postId: string;
     contentHtml: string;
     content: string;
-    excerpt?: string;
-    title?: string;
-    slug?: string;
-    categoryId: string;
-    datePublished?: Date;
+    excerpt: string;
+    title: string;
+    category: ICategory;
+    datePublished: string;
 }
 
 export interface ICategory {
-    id: string;
+    categoryId: string;
     categoryName: string;
     categoryDescription: string;
+    categoryColor: string;
+}
+
+export interface IAllPosts {
+    [key: string]: IBlog[];
 }

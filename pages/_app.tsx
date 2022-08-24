@@ -8,8 +8,11 @@ import "../styles/styles.scss";
 function App({ Component, pageProps }: AppProps) {
     return (
         <>
-            <NavBar />
-            <Component {...pageProps} />
+            <div className="nav-wrapper">
+                <NavBar />
+                <Component {...pageProps} />
+            </div>
+
             <Footer />
         </>
     );

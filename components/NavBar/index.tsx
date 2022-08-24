@@ -9,10 +9,22 @@ const NavBar: NextPage = () => {
             <Image src="/vercel.svg" width={100} height={20} />
             <ul className={styles.navList}>
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">
+                        <Image
+                            src="/icons/home-svgrepo-com.svg"
+                            width={50}
+                            height={30}
+                        />
+                    </Link>
                 </li>
                 <li>
-                    <Link href="/about">About</Link>
+                    <Link href="/about">
+                        <Image
+                            src="/icons/about-faq-help-svgrepo-com.svg"
+                            width={50}
+                            height={30}
+                        />
+                    </Link>
                 </li>
             </ul>
         </nav>

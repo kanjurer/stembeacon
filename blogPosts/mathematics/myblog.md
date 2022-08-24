@@ -1,6 +1,7 @@
 ---
 title: How to earn 50k / year in part time job?
-categoryId: science
+categoryId: mathematics
+datePublished: October 13, 2021
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum posuere urna nec tincidunt. Quisque egestas diam in arcu cursus. Aliquet porttitor lacus luctus accumsan tortor. Turpis tincidunt id aliquet risus feugiat in. In eu mi bibendum neque egestas congue quisque. Consectetur libero id faucibus nisl tincidunt. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Adipiscing commodo elit at imperdiet dui. Aliquet porttitor lacus luctus accumsan tortor posuere. Ac tortor dignissim convallis aenean et tortor at risus viverra. Aliquet nibh praesent tristique magna sit. Vestibulum sed arcu non odio euismod lacinia. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Commodo nulla facilisi nullam vehicula ipsum a.

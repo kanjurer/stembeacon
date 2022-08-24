@@ -1,13 +1,35 @@
-.nav {
-    ul {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-        width: 20%;
+@use "../../styles/utils/index" as utils;
 
-        li {
-            margin: 0px 10px;
-        }
+.nav {
+    @include utils.add-padding();
+    background-color: aqua;
+    padding: 10px;
+}
+.navList {
+    display: inline-flex;
+    list-style: none;
+    font-weight: bold;
+
+    @include utils.breakpoint-up(small) {
+        flex-direction: row;
+    }
+
+    @include utils.breakpoint-up(medium) {
+        flex-direction: row;
+    }
+
+    @include utils.breakpoint-up(large) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    @include utils.breakpoint-up(xlarge) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    li {
+        @include utils.add-margin();
+        @include utils.add-padding();
     }
 }

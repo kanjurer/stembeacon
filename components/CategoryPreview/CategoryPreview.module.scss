@@ -6,6 +6,8 @@
     @include utils.add-borderRadius();
 
     border: 2px solid gray;
+    min-width: 300px;
+    min-height: 300px;
 
     &:hover {
         cursor: pointer;
