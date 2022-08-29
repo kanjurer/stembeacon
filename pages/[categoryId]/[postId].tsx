@@ -22,7 +22,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ post }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <BlogLayout>
-                <h2>{postId}</h2>
+                <h2>{title}</h2>
                 <BlogDetailsHeader post={post} />
                 <article
                     dangerouslySetInnerHTML={{

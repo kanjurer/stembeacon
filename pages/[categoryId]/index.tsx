@@ -20,13 +20,13 @@ interface BlogCategoryProps {
 }
 
 const BlogCategory: NextPage<BlogCategoryProps> = ({
-    category: { categoryName, categoryId, categoryDescription },
+    category: { categoryName, categoryDescription },
     categoryPosts,
 }) => {
     return (
         <>
             <Head>
-                <title>{categoryName} - STEMbeacon</title>
+                <title>{categoryName}</title>
                 <meta name={categoryName} content={categoryDescription} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
