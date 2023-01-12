@@ -1,19 +1,11 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Head from "next/head";
 
-import { ICategory } from "../lib/interfaces";
-import { getAllCategories } from "../lib/postUtils";
+interface HomeProps {}
 
-import BlogLayout from "../components/BlogLayout";
-import CategoryPreview from "../components/CategoryPreview";
-
-import styles from "./home.module.scss";
-
-interface HomeProps {
-    categories: ICategory[];
-}
-
-const Home: NextPage<HomeProps> = ({ categories }) => {
+const Home: NextPage<HomeProps> = () => {
     return (
         <>
             <Head>
@@ -24,28 +16,8 @@ const Home: NextPage<HomeProps> = ({ categories }) => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <BlogLayout>
-                {categories.map((category) => {
-                    return (
-                        <CategoryPreview
-                            category={category}
-                            key={category.categoryId}
-                        />
-                    );
-                })}
-            </BlogLayout>
         </>
     );
 };
 
 export default Home;
-
-export const getStaticProps: GetStaticProps = async () => {
-    const categories = getAllCategories();
-    return {
-        props: {
-            categories,
-        },
-    };
-};

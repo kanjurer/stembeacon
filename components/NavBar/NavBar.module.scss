@@ -2,7 +2,6 @@
 
 .nav {
     @include utils.add-padding();
-    background-color: aqua;
     padding: 10px;
 }
 .navList {
@@ -19,8 +18,7 @@
     }
 
     @include utils.breakpoint-up(large) {
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
     }
 
     @include utils.breakpoint-up(xlarge) {

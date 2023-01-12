@@ -13,6 +13,7 @@ export interface ICategory {
     categoryName: string;
     categoryDescription: string;
     categoryColor: string;
+    categoryImage: string;
 }
 
 export interface IAllPosts {

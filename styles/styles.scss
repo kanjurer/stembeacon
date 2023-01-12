@@ -15,7 +15,7 @@
     }
 
     @include utils.breakpoint-up(large) {
-        grid-template-columns: 1fr 9fr;
+        grid-template-columns: 1fr;
     }
 
     @include utils.breakpoint-up(xlarge) {

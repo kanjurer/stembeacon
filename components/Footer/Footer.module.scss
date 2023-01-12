@@ -1,3 +1,13 @@
+@use "../../styles/utils/index" as utils;
+
 .footer {
-    color: blue;
+    @include utils.add-margin();
+    @include utils.add-padding();
+
+    display: flex;
+    justify-content: space-between;
+
+    .contactMe {
+        list-style: none;
+    }
 }

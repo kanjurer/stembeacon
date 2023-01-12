@@ -5,7 +5,7 @@ import html from "remark-html";
 import { remark } from "remark";
 
 import categoryList from "./categories.json";
-import { IAllPosts, IBlog, ICategory } from "./interfaces";
+import { IAllPosts, IBlog, ICategory } from "../types";
 
 const POST_DIRECTORY = "blogPosts";
 const { categories } = categoryList;

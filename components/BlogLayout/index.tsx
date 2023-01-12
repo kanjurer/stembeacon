@@ -8,7 +8,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
     return (
         <main className={styles.mainContainer}>
             <section className={styles.mainContent}>{children}</section>
-            <section>whatever </section>
+            <section style={{ backgroundColor: "black" }}>whatever </section>
         </main>
     );
 };

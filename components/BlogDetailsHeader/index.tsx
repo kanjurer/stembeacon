@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IBlog, ICategory } from "../../lib/interfaces";
+import { IBlog, ICategory } from "../../types";
 
 import styles from "./BlogDetailsHeader.module.scss";
 
@@ -19,7 +19,7 @@ const CategoryTag = ({
     category: { categoryName, categoryColor, categoryId },
 }: CategoryTagProps) => {
     return (
-        <Link href={`/${categoryId}`}>
+        <Link href={`/categories/${categoryId}`}>
             <span
                 className={styles.categoryTag}
                 style={{ backgroundColor: categoryColor }}

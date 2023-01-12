@@ -2,10 +2,10 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { ParsedUrlQuery } from "querystring";
 
-import { IAllPosts, IBlog } from "../../lib/interfaces";
-import { getAllPosts, getPostData } from "../../lib/postUtils";
-import BlogLayout from "../../components/BlogLayout";
-import BlogDetailsHeader from "../../components/BlogDetailsHeader";
+import { IAllPosts, IBlog } from "../../../../types";
+import { getAllPosts, getPostData } from "../../../../utils";
+import BlogLayout from "../../../../components/BlogLayout";
+import BlogDetailsHeader from "../../../../components/BlogDetailsHeader";
 
 interface BlogPostProps {
     post: IBlog;

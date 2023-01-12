@@ -19,6 +19,16 @@ const NavBar: NextPage = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/categories">
+                        {/* <Image
+                            src="/icons/home-svgrepo-com.svg"
+                            width={50}
+                            height={30}
+                        /> */}
+                        Categories
+                    </Link>
+                </li>
+                <li>
                     <Link href="/about">
                         {/*
                         <Image

@@ -4,25 +4,29 @@
             "categoryId": "science",
             "categoryName": "Science",
             "categoryDescription": "what is this",
-            "categoryColor": "red"
+            "categoryColor": "red",
+            "categoryImage": "science.jpg"
         },
         {
             "categoryId": "technology",
             "categoryName": "Technology",
             "categoryDescription": "what is this",
-            "categoryColor": "green"
+            "categoryColor": "green",
+            "categoryImage": "tech.jpg"
         },
         {
             "categoryId": "mathematics",
             "categoryName": "Mathematics",
             "categoryDescription": "what is this",
-            "categoryColor": "orange"
+            "categoryColor": "orange",
+            "categoryImage": "math.jpg"
         },
         {
             "categoryId": "computer-science",
             "categoryName": "Computer Science",
             "categoryDescription": "what is this",
-            "categoryColor": "brown"
+            "categoryColor": "brown",
+            "categoryImage": "cs.jpg"
         }
     ]
 }
