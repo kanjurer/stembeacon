@@ -6,4 +6,4 @@ This is my first ever blog where I will be posting stuff that I like about Scien
 
 ## How long will it take me to complete the blog?
 
-My plan is to complete this blog before the end of August, 2022 before I start posting content.
+My plan is to complete this blog before the end of September, 2022 before I start posting content.
